@@ -3,6 +3,12 @@
 
 // Take the operand input
 
+const clearButton = document.getElementById('clearButton');
+clearButton.addEventListener('click' , function () {
+    document.getElementById('display').value = '';
+});
+
+
 let result;
 
 switch (operator) {
