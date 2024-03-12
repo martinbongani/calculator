@@ -32,16 +32,13 @@
             <input type="button" value="0" onclick="form1.answer.value += '0'">
             <input type="button" value="." onclick="form1.answer.value += '.'">
             <!-- When we click on the '=' button, the onclick() shows the sum results on the calculator screen. -->
-            <input type="button" value="=" onclick="form1.answer.value = eval(form1.answer.value)">
+            <input type="button" value="=" onclick="calculate()">
             <br><br>
             <button id="clearButton">Clear</button>
 
         </form>
     </div>
 
-
-
-    <script src="/index.js"></script>
+    <script src="index.js"></script>
 </body>
-
 </html>

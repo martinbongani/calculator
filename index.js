@@ -1,31 +1,20 @@
-// Program for a simple calculator
-// Take the operator input
+document.addEventListener('DOMContentLoaded', function () {
+    const clearButton = document.getElementById('clearButton');
+    const calcInput = document.getElementById('calc');
 
-// Take the operand input
-
-const clearButton = document.getElementById('clearButton');
-clearButton.addEventListener('click' , function () {
-    document.getElementById('display').value = '';
+    clearButton.addEventListener('click', function () {
+        calcInput.value = '';
+    });
 });
 
+function calculate() {
+    const expression = document.form1.answer.value;
+    let result;
 
-let result;
-
-switch (operator) {
-    case '+':
-        result = number1 + number2;
-        break;
-    case '-':
-        result = number1 - number2;
-        break;
-    case '*':
-        result = number1 * number2;
-        break;
-    case '/':
-        result = number1 / number2;
-        break;
-    default:
-        result = 'Invalid operator';
+    try {
+        result = eval(expression);
+        document.form1.answer.value = result;
+    } catch (error) {
+        document.form1.answer.value = 'Error';
+    }
 }
-
-console.log(`Result: ${result}`);
