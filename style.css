@@ -13,14 +13,14 @@ h1 {
     padding: 20px;
 }
 input {
-    width: 20px;
+    width: 62px;
     background-color:gray;
     color: white;
     border: 3px solid gray;
     border-radius: 5px;
     padding: 26px;
     margin: 5px;
-    font-size: 15px;
+    font-size: 20px;
 }
 #calc {
     width: 250px;
@@ -28,6 +28,8 @@ input {
     border-radius: 3px;
     padding: 20px;
     margin: auto;
+    background-color: skyblue;
+    color: black;
 }
 #clearButton {
     width: 140px;
@@ -35,4 +37,5 @@ input {
     background-color: gray;
     border: 3px solid gray;
     color: white;
+    border-radius: 3px;
 }
